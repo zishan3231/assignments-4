@@ -7,11 +7,14 @@ function radianToDegree(radian) {
     let degree1 = degree.toFixed(2)
     return degree1;
 }
-const totalRedian = radianToDegree(199)
+const totalRedian = radianToDegree(10)
 console.log(totalRedian)
 
 
+// ------------------------------
 // Problem:2  isJavaScriptFile
+// ------------------------------
+
 function isJavaScriptFile(string) {
     if (string.endsWith(".js")) {
         return true;
@@ -57,7 +60,7 @@ function publicBusFare(people) {
     return fare;
 
 }
-const totalPeople = publicBusFare(235)
+const totalPeople = publicBusFare(50)
 console.log(totalPeople)
 
 // ------------------------
