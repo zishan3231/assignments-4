@@ -7,8 +7,8 @@ function radianToDegree(radian) {
     let degree1 = degree.toFixed(2)
     return degree1;
 }
-const totalredian = radianToDegree(10)
-console.log(totalredian)
+const totalRedian = radianToDegree(199)
+console.log(totalRedian)
 
 
 // Problem:2  isJavaScriptFile
@@ -33,12 +33,12 @@ console.log(fileName)
 
 function oilPrice(diesel, Petrol, octane) {
     const dieselPrice = 114;
-    const PetrolPrice = 130;
+    const petrolPrice = 130;
     const octanePrice = 135;
     const totalDieselPrice = dieselPrice * diesel
-    const totalPetrolPrice = PetrolPrice * Petrol
-    const totaloctanePrice = octanePrice * octane
-    const totalPrice = totalDieselPrice + totalPetrolPrice + totaloctanePrice;
+    const totalPetrolPrice = petrolPrice * Petrol
+    const totalOctanePrice = octanePrice * octane
+    const totalPrice = totalDieselPrice + totalPetrolPrice + totalOctanePrice;
     return totalPrice;
 }
 const total = oilPrice(1, 1, 1)
@@ -48,35 +48,33 @@ console.log(total)
 // problem-4 publicBusFare
 // --------------------------
 
-function publicBusFare(People) {
-    const bCapacity = 50;
-    const micCapacity = 11;
-    const remained = People % bCapacity;
-    const rest = remained % micCapacity;
+function publicBusFare(people) {
+    const busCapacity = 50;
+    const microBusCapacity = 11;
+    const remained = people % busCapacity;
+    const rest = remained % microBusCapacity;
     const fare = rest * 250;
     return fare;
 
 }
-const totalPeople = publicBusFare(55)
+const totalPeople = publicBusFare(235)
 console.log(totalPeople)
+
 // ------------------------
 // problem-5 isBestFriend
 // ------------------------
 
 const item1 = {
-    name: 'abul',
-    friend: 'babul'
+    name: 'abul', friend: 'babul'
 
 }
 const item2 = {
-    name: 'babul',
-    friend: 'abul'
+    name: 'babul', friend: 'abul'
 }
 function isBestFriend(item1, item2) {
     if (item1.name === item2.friend && item1.friend === item2.name) {
         return true;
-    }
-    else {
+    } else {
 
         return false
     }
